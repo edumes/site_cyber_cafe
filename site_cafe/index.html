@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> Cyber Café </title>
+        <style type="text/css">
+    
+        body{
+            background-image: url(img/fundo.jpg);
+            background-size: 100%;
+            background-attachment: fixed;
+        }
+
+        #principal{
+            width: 1024px;
+            height: 900px;
+            margin: auto;
+        }
+
+        #topo{
+            width: 1024px;
+            height: 25px;
+            float: left;
+        }
+
+        #logo{
+            width: 186px;
+            height: 178px;
+            margin-left: 419px;
+            float: left;
+        }
+
+        #menu_principal{
+            width: 1024px;
+            height: 49px;
+            float: left;
+            background-image: url(img/menu_principal.jpg);
+            margin-top: 10px;
+        }
+
+        #conteudo{
+            width: 780px;
+            height: 588px;
+            float: left;
+            background-image: url(img/fundo_conteudo.png);
+            margin-top: 10px;
+            margin-left: 122px;
+            margin-right: 122px;
+        }
+
+        #menu_servicos{
+            width: 190px;
+            height: 255px;
+            float: left;
+            background-image: url(img/menu_servicos.png);
+            margin-top: 20px;
+            margin-left: 30px;
+        }
+
+        #novidades{
+            width: 217px;
+            height: 255px;
+            float: left;
+            margin-top: 20px;
+            margin-left: 42px;
+        }
+
+        #eventos{
+            width: 217px;
+            height: 255px;
+            float: left;
+            margin-top: 20px;
+            margin-left: 42px;
+        }
+
+        #localizacao{
+            width: 190px;
+            height: 191px;
+            float: left;
+            background-image: url(img/localizacao.png);
+            margin-top: 10px;
+            margin-left: 30px;
+        }
+
+        #cardapio{
+            width: 476px;
+            height: 191px;
+            margin-top: 10px;
+            margin-left: 42px;
+            float: left;
+        }
+
+        #atendimento{
+            width: 190px;
+            height: 78px;
+            float: left;
+            margin-top: 10px;
+            margin-left: 30px;
+            background-image: url(img/atendimento.png);
+        }
+
+        #menu_item{
+            width: 780px;
+            height: 20px;
+            float: left;
+            margin-right: 122px;
+            margin-left: 122px;
+        }
+
+        .link{
+            width: auto;
+            height: 20px;
+            float: left;
+            margin-top: 10px;
+            margin-left: 33px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 22px;
+            font-weight: bold;
+            color: #1A1A1A;
+        }
+
+        .link:hover{
+            color: white;
+        }
+
+        li{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 12px;
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        h1{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 20px;
+            color: orange;
+            margin-top: 0px;
+            margin-bottom: 5px;
+        }
+
+        h2{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 14px;
+            color: orange;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        p{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 12px;
+            color: white;
+        }
+
+        a{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 12px;
+            color: orange;
+            text-decoration: none;
+        }
+
+        #rodape{
+            width: 1088px;
+            height: 18px;
+            margin-left: 122px;
+            margin-right: 122px;
+            text-align: center;
+        }
+
+        #xicara{
+            width: 200px;
+            height: 177px;
+            position: relative;
+            left: 880px;
+            top: -220px;
+        }
+
+        #data {
+	    width: 300px;
+	    height: 20px;
+	    float: right;
+	    margin-top: 142px;
+	    margin-right: 40px;
+        }
+
+        .divisao{
+            width: 370px;
+            height: 568px;
+            margin: 10px;
+            float: left;
+        }
+
+        .foto_evento{
+            border-width: 5px;
+            border-color: white;
+            border-style: solid;
+        }
+
+    
+        </style>
+
+<script language="javascript" type="text/javascript">
+	dayName = new Array ("domingo", "segunda", "terça", "quarta", "quinta", "sexta", "sabado")
+	monName = new Array ("janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "outubro", "novembro", "dezembro")
+	now = new Date
+</script>
+
+    </head>
+<body>
+    <div id="principal">
+        <div id="topo"> 
+            <div id="logo"> <a href="index.html"> <img src="img/logo.png"> </a> </div>
+        </div>
+
+    <div id="data">
+        <script language=javascript type="text/javascript">
+            document.write ("<p> Hoje é " + dayName[now.getDay() ] + ", " + now.getDate () + " de " + monName [now.getMonth() ]   +  " de "  +     now.getFullYear () + ". </p>")
+        </script>
+    </div>
+
+    <div id="menu_principal"> 
+        <div id="menu_item">
+            <a href="index.html"> <div class="link"> Home </div> </a>
+            <a href="promocoes.html"> <div class="link"> Promoções </div> </a>
+            <a href="servicos.html"> <div class="link"> Serviços </div> </a>
+            <a href="cardapio.html"> <div class="link"> Cardápio  </div> </a>
+            <a href="eventos.html"> <div class="link"> Eventos </div> </a>
+            <a href="contatos.html"> <div class="link"> Contatos </div> </a>
+        </div>
+    </div>
+
+    <div id="conteudo"> 
+        <div id="menu_servicos"> 
+            <ul>
+                <li> Internet </li>
+                <li> Jogos em Rede </li>
+                <li> Impressão </li>
+                <li> Scanner </li>
+                <li> Gravação em CD/DVD </li>
+                <li> Back-up </li>
+                <li> Bate-Papo </li>
+            </ul>
+        </div>
+
+        <div id="novidades"> 
+            <h1> NOVIDADES </h1>
+            <img src="img/novidades.jpg">
+            <h2> 24/06/21 </h2>
+            <p> A Cyber Café, especializada em grelhados e parmegianas, acaba de incluir 10 novos pratos em seu cardápio. </p>
+            <a href="#"> leia+ </a>
+        </div>
+
+        <div id="eventos"> 
+            <h1> EVENTOS </h1> 
+            <img src="img/eventos.jpg">
+            <h2> 24/06/21 </h2>
+            <p> cyber café informa: nos dias 3, 4 e 5 de setembro estaremos com as  maquinas alugadas para a realização do evento acervus cup. </p>
+            <a href="eventos.html"> leia+ </a>
+        </div>
+
+        <div id="localizacao"> 
+            <h1 style="margin-left: 8px; margin-top: 5px"   > Localização </h1>
+
+            <a href="https://goo.gl/maps/JLvwQ4yMjuf1HAQf7" target="_blank">
+                <img src="img/mapa.jpg" style="margin-left 8px">
+            </a> 
+
+            <p style="margin-left: 8px; margin-top: 5px;"> AV. Brasil 400, Frezarin Americana </p>
+        </div>
+
+        <div id="cardapio">
+            
+            <a href="pizza.html"> <img src="img/pizza.png"> </a>
+            <a href="saladas.html"> <img src="img/saladas.png"> </a>
+            <a href="doces.html"> <img src="img/doces.png"> </a>
+        
+        </div>
+
+        <div id="atendimento"> 
+            <h1 style="margin-left: 8px; margin-top: 5px;"> Atendimento </h1>
+            <p style="margin-left; 12px;"> 19 <span style="font-size: 24px;"> 3458-7898 </span>  
+            </p>
+        </div>
+
+    </div>
+
+</div>
+
+<div id="xicara"> <img src="img/xicara.png"></div>
+
+<div id="rodape">
+    <p> 2000-2021 cybercafe.com Todos os Direitos reservados </p>
+</div>
+    
+</body>
+</html>
