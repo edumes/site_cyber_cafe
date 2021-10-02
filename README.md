@@ -1,2 +1,2 @@
 # site_cyber_cafe
-Trabalho feito no colégio Politec de Americana por Eduardo Moreira Santarosa
+Trabalho feito no Colégio Politec de Americana por Eduardo Moreira Santarosa
